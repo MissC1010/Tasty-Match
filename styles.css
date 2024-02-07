@@ -1,0 +1,68 @@
+#grid {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(images/display.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  font-size: 30px;
+  padding: 5px 20px;
+  background: linear-gradient(
+    to right,
+    #f88132,
+    #ebcf63
+  ); /* Adjust the colors */
+  color: #fff;
+  border-radius: 20px; /* Adjust the border-radius for curved sides */
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 1px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(45deg, #36d1dc, #5b86e5);
+  padding: 1px 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+h2::before {
+  top: -10px;
+  right: -10px;
+  transform: rotate(45deg);
+}
+
+h2::after {
+  bottom: -10px;
+  left: -10px;
+  transform: rotate(-45deg);
+}
